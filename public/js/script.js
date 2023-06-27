@@ -2,7 +2,9 @@ const outputme = document.getElementById("output1");
 const outputbot = document.getElementById("output2");
 const mic = document.getElementById("mic");
 const socket = io();
+// allowing a silence of 2.5 seconds before recognition stops
 let silenceTimer = null;
+// fromBot is a marker which is used to check if the bot is speaking or not, or the mic has been turned off
 let fromBot = false;
 let userText = [] , botText = [];
 
