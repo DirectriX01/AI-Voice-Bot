@@ -1,0 +1,2 @@
+[phases.build]
+cmds = ["...","cp -r ./helper/ ./node_modules/@huggingface/dist"]
