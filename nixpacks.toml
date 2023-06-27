@@ -1,5 +1,5 @@
 [phases.install]
-cmds = ["...","echo build2","ls helper","sudo ls -R node_modules/@huggingface","cp -r ./helper/ ./node_modules/@huggingface/dist"]
+cmds = ["...","echo build2","ls helper","sudo ls -R node_modules/@huggingface","cp -r ./helper/ ./node_modules/@huggingface/inference/dist"]
 
 [phases.build]
-cmds = ["...","echo build","cp -r ./helper/ /app/node_modules/@huggingface/dist"]
+cmds = ["...","echo build","cp -r ./helper/ /app/node_modules/@huggingface/inference/dist"]
