@@ -6,8 +6,8 @@ module.exports = {
     let x = await hf.conversational({
       model: "facebook/blenderbot-400M-distill",
       inputs: {
-        past_user_inputs: [a],
-        generated_responses: [b],
+        past_user_inputs: a ? [a] : [],
+        generated_responses: b? [b] : [],
         text: c,
       },
     });
