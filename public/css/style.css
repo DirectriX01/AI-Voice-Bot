@@ -1,0 +1,45 @@
+body {
+  background-color: #585858; /* Grey background color */
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+.mic-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1b1b;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(105, 79, 79, 0.2);
+  z-index: 1;
+  margin: 20px auto; /* Center the mic button horizontally and add margin */
+}
+
+.mic-button i {
+  color: #978a8a;
+  font-size: 24px;
+}
+
+
+.user1-card {
+  animation: pulsate 2s infinite;
+}
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(0, 0, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 255, 0.5);
+  }
+}

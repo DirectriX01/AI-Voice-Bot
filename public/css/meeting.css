@@ -1,0 +1,63 @@
+body {
+    background-color: #362d2d; /* Grey background color */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .meeting-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    background-color: #eee; /* Lighter grey div container */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .user-video {
+    width: 400px;
+    height: 300px;
+    background-color: #ccc; /* Light grey user video background */
+    margin-bottom: 10px;
+  }
+  
+  .user-video:last-child {
+    margin-bottom: 0;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .mic-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mic-button i {
+    color: #777;
+    font-size: 24px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .meeting-container {
+      flex-direction: column;
+    }
+  
+    .video-container {
+      margin: 20px 0;
+    }
+  }
