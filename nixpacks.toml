@@ -1,5 +1,5 @@
 [phases.install]
-cmds = ["...","test -d ./helper && echo "Directory exists" || echo "Directory does not exist"","cp -r ./helper/ /app/node_modules/@huggingface/dist"]
+cmds = ["...",'test -d ./helper && echo "Directory exists"',"cp -r ./helper/ /app/node_modules/@huggingface/dist"]
 
 [phases.build]
-cmds = ["...","echo build","cp -r ./helper/ /app/node_modules/@huggingface/dist"]
+cmds = ["...","echo build","cp -r ./helper/ /app/node_modules/@huggingface/dist"]c
