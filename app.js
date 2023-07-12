@@ -16,6 +16,8 @@ const server = app.listen(PORT, () => console.log("HELLO SERVER STARTED"));
 
 const io = socketio(server, {
   allowEIO3: true,
+  transports: ['websocket'],
+  secure: true,
 })
 
 io.on("connection", function (socket) {
