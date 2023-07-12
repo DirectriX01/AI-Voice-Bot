@@ -1,2 +1,0 @@
-[phases.install]
-cmds = ["...","echo build2","ls helper","ls -R ./node_modules/@huggingface/inference/dist","cp -r ./helper/index.js ./node_modules/@huggingface/inference/dist/index.js"]
